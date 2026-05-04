@@ -6,6 +6,16 @@ AI powered interview platform designed to help you prepare with confidence, with
 
 Create a `.env` file at the root of your project similar to [.env.example](.env.example).
 
+Initialize database and apply migrations:
+
+```sh
+# Replace `docker` with your container management tool (i.e. docker, podman)
+docker compose -f docker-compose.yml up -d
+
+# Apply migration
+npm run db:migrate
+```
+
 Run the development server:
 
 ```sh

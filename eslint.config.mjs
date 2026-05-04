@@ -12,7 +12,7 @@ export default antfu({
     indent: 2,
     quotes: "double",
   },
-  ignores: [".next/**", "node_modules/**"],
+  ignores: [".next/**", "node_modules/**", "src/db/migrations/**"],
   plugins: { node: n },
   rules: {
     "antfu/if-newline": "off",
